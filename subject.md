@@ -1,6 +1,19 @@
 # Day 1: SUBJECT
+
+## Subject là gì ?
+
+"Subject" là một class trong thư viện RxJS, nó vừa là 1 Observable (chúng ta có thể subscribe vào nó) ,vừa là 1 Observer (có các method để chúng ta tự control khi nào gửi notification)
+
+
+Subject có thể được sử dụng để chia sẻ dữ liệu giữa các Component trong Angular, ví dụ như giữa các Component con và cha, hoặc giữa các Component không có mối quan hệ trực tiếp. Khi có sự thay đổi trong dữ liệu, Subject sẽ thông báo đến các Component đã đăng ký và cung cấp giá trị mới cho chúng.
+
+Có 2 loại Subject hay được sử dụng bao gồm:
+
+1.BehaviorSubject: Subject này lưu trữ giá trị hiện tại và phát ra giá trị cuối cùng khi có một Component mới đăng ký. Component mới đăng ký sẽ nhận được giá trị hiện tại và các giá trị mới sau đó.
+
+2.Subject: Subject cơ bản không lưu trữ giá trị trước đó. Nó chỉ phát ra các giá trị mới nhất cho tất cả các Component đã đăng ký.
+
 phương thức asObservable() được sử dụng chuyển đổi subject thành một observable.
-Subject là một loại observable đặc biệt trong Angular, cho phép bạn cung cấp và nhận giá trị, cũng như thông báo cho các subscriber của nó. Tuy nhiên, có thể có trường hợp bạn muốn giới hạn quyền truy cập vào Subject chỉ dưới dạng một observable, mà không cho phép các thành phần khác thay đổi giá trị của nó.
 asObservable(): Phương thức này trả về một observable mới khi bạn subscribe vào nó
 
 ```typescript
