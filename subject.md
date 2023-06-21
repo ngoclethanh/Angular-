@@ -12,7 +12,6 @@ Có 2 loại Subject hay được sử dụng bao gồm:
 
 2.Subject: Subject cơ bản không lưu trữ giá trị trước đó. Nó chỉ phát ra các giá trị mới nhất cho tất cả các Component đã đăng ký.
 
-phương thức asObservable() được sử dụng chuyển đổi subject thành một observable.
 asObservable(): Phương thức này trả về một observable mới khi bạn subscribe vào nó
 
 ```typescript
