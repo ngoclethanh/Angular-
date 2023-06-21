@@ -2,8 +2,7 @@
 
 ## Subject là gì ?
 
-"Subject" là một class trong thư viện RxJS, nó vừa là 1 Observable (chúng ta có thể subscribe vào nó) ,vừa là 1 Observer (có các method để chúng ta tự control khi nào gửi notification)
-
+"Subject" là một loại Observable đặc biệt, nó vừa là 1 Observable (chúng ta có thể subscribe vào nó) ,vừa là 1 Observer (với đầy đủ các method để chúng ta tự control khi nào gửi notification), chỉ nhận data sau khi đã subscribe.
 
 Subject có thể được sử dụng để chia sẻ dữ liệu giữa các Component trong Angular, ví dụ như giữa các Component con và cha, hoặc giữa các Component không có mối quan hệ trực tiếp. Khi có sự thay đổi trong dữ liệu, Subject sẽ thông báo đến các Component đã đăng ký và cung cấp giá trị mới cho chúng.
 
