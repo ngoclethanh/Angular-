@@ -15,6 +15,6 @@ RouterModule mặc định cung cấp hai method là forRoot() và forChild(). H
  Thuộc tính này xác định cách router sẽ xảy ra dựa trên URL được cung cấp.
  1. 'prefix': Đây là giá trị mặc định. Khi sử dụng 'prefix', router sẽ kiểm tra xem URL có khớp với đường dẫn cụ thể được chỉ định hay không. Nếu URL khớp với phần đầu của đường dẫn, định tuyến sẽ xảy ra. Điều này có nghĩa là URL có thể chứa các phần tử bổ sung sau đó và vẫn được coi là khớp.
 
- 2.'full': Khi sử dụng 'full', router sẽ yêu cầu URL khớp chính xác với đường dẫn được chỉ định. Điều này có nghĩa là URL không được phép chứa các phần tử bổ sung sau đó.
+ 2. 'full': Khi sử dụng 'full', router sẽ yêu cầu URL khớp chính xác với đường dẫn được chỉ định. Điều này có nghĩa là URL không được phép chứa các phần tử bổ sung sau đó.
 
 Ví dụ: Nếu bạn có một định tuyến với đường dẫn '/users', chỉ có URL '/users' mới khớp với định tuyến này. URL '/users/profile', '/users/settings', v.v. sẽ không khớp.
